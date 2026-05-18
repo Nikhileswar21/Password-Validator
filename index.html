@@ -1,0 +1,42 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Password Validator</title>
+  <link rel="stylesheet" href="index.css" />
+</head>
+<body>
+  <main class="page-shell">
+    <section class="validator-card">
+      <header class="card-header">
+        <span class="badge">Secure</span>
+        <h1>Password Validator</h1>
+        <p class="intro">Type a password to check strength and watch the requirements update in real time.</p>
+      </header>
+
+      <div class="input-row">
+        <input id="password" type="password" placeholder="Enter a strong password" autocomplete="new-password" />
+        <button id="toggle-button" type="button" aria-label="Show or hide password">👁</button>
+      </div>
+
+      <div class="meter">
+        <div class="meter-track">
+          <div class="meter-fill" id="bar"></div>
+        </div>
+        <p class="strength-label" id="slabel">—</p>
+      </div>
+
+      <ul class="rules">
+        <li id="r-len">At least 8 characters</li>
+        <li id="r-upper">One uppercase letter</li>
+        <li id="r-lower">One lowercase letter</li>
+        <li id="r-num">One number</li>
+        <li id="r-special">One special character</li>
+      </ul>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
