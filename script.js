@@ -11,7 +11,7 @@ const validators = {
   'r-special': value => /[!@#$%^&*()_+\-=[\]{};':"\\|,.<>/?]/.test(value)
 };
 
-const strengthLabels = ['—', 'Weak', 'Fair', 'Good', 'Strong', 'Excellent'];
+const strengthLabels = ['', 'Weak', 'Fair', 'Good', 'Strong', 'Excellent'];
 const fillColors = ['#e74c3c', '#e74c3c', '#f39c12', '#f59e0b', '#27ae60', '#22c55e'];
 
 function updateRule(ruleId, isValid) {
@@ -34,7 +34,7 @@ function updateMeter(score) {
 
 function validatePassword(value) {
   if (value.length === 0) {
-    strengthLabel.textContent = '—';
+    strengthLabel.textContent = '';
     meterFill.style.width = '0%';
     meterFill.style.background = 'transparent';
   }
