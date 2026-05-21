@@ -53,4 +53,4 @@ Since this is a purely frontend project, you do not need to install any external
 This project is open-source and available under the [MIT License](LICENSE).
 
 ---
-*Created by [nikhil](https://github.com/Nikhhileswar21) - feel free to reach out or contribute!*
+*Created by [nikhil](https://github.com/Nikhileswar21) - feel free to reach out or contribute!*
